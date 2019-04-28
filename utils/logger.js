@@ -25,7 +25,11 @@ const errorLogger = createLogger({
     new transports.File({
       maxsize: 5120000,
       maxFiles: 5,
-      filename: `${__dirname}/../logs/errorLogs.log`
+      colorise: true,
+      filename: `${__dirname}/../logs/errorLogs.log`,
+      eol: "rn",
+      timestamp: true,
+      handleExceptions: false
     })
   ]
 });
@@ -39,13 +43,29 @@ const infoLogger = createLogger({
   ),
   transports: [
     new transports.File({
+      maxsize: 5120000,
+      maxFiles: 5,
+      colorise: true,
       filename: `${__dirname}/../logs/infoLogs.log`
     })
   ]
 });
 
+const uncaughtExc = () => {
+  process.on("unhandledRejection", exc => {
+    throw exc;
+  });
+  process.on("uncaughtException", exc => {
+    errorLogger.log("error", { exc });
+    setTimeout(() => {
+      process.exit(1);
+    }, 1000);
+  });
+};
+
 module.exports = {
   errorLogger,
   infoLogger,
-  consoleLogger
+  consoleLogger,
+  uncaughtExc
 };
