@@ -27,7 +27,6 @@ const errorLogger = createLogger({
       maxFiles: 5,
       colorise: true,
       filename: `${__dirname}/../logs/errorLogs.log`,
-      eol: "rn",
       timestamp: true,
       handleExceptions: false
     })
@@ -51,17 +50,7 @@ const infoLogger = createLogger({
   ]
 });
 
-const uncaughtExc = () => {
-  process.on("unhandledRejection", exc => {
-    throw exc;
-  });
-  process.on("uncaughtException", exc => {
-    errorLogger.log("error", { exc });
-    setTimeout(() => {
-      process.exit(1);
-    }, 1000);
-  });
-};
+const uncaughtExc = () => {};
 
 module.exports = {
   errorLogger,

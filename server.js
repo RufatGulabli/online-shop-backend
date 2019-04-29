@@ -13,9 +13,25 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(uncaughtExc);
+// app.use(uncaughtExc);
 
 app.use("/login", loginRoutes);
+
+app.use((err, req, res, next) => {
+  errorLogger.log({ level: "error", message: err.message });
+  // console.log(err);
+  process.on("unhandledRejection", exc => {
+    throw exc;
+  });
+  process.on("uncaughtException", exc => {
+    console.log("Uncaught Exception");
+    errorLogger.log(exc.message);
+    setTimeout(() => {
+      process.exit(1);
+    }, 1000);
+  });
+  res.json("Something went wrong");
+});
 
 app.listen(config.get("port"), () => {
   consoleLogger.log({
