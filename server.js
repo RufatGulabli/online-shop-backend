@@ -1,36 +1,43 @@
 const express = require("express");
-const {
-  errorLogger,
-  infoLogger,
-  consoleLogger,
-  uncaughtExc
-} = require("./utils/logger");
+const { errorLogger, infoLogger, consoleLogger } = require("./utils/logger");
 const config = require("config");
 const winston = require("winston");
 const loginRoutes = require("./controllers/login");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(uncaughtExc);
-
+app.use(cors());
 app.use("/login", loginRoutes);
 
+// 404 - Not Found Http Handler
+app.use(function(req, res, next) {
+  let err = new Error("Not Found");
+  err.status = 404;
+  res.json({
+    status: err.status,
+    message: err.message
+  });
+});
+
+// Express Error Handler
 app.use((err, req, res, next) => {
   errorLogger.log({ level: "error", message: err.message });
-  // console.log(err);
-  process.on("unhandledRejection", exc => {
-    throw exc;
-  });
-  process.on("uncaughtException", exc => {
-    console.log("Uncaught Exception");
-    errorLogger.log(exc.message);
-    setTimeout(() => {
-      process.exit(1);
-    }, 1000);
-  });
-  res.json("Something went wrong");
+  res.status(500).json({ message: "Internal server error" });
+});
+
+process.on("unhandledRejection", exc => {
+  throw exc;
+});
+
+process.on("uncaughtException", exc => {
+  errorLogger.log({ level: "error", message: err.message });
+  console.log("Exit");
+  setTimeout(() => {
+    process.exit(1);
+  }, 2000);
 });
 
 app.listen(config.get("port"), () => {
@@ -41,9 +48,3 @@ app.listen(config.get("port"), () => {
   // below code is for demonstration of default.json and production.json configarution
   // console.log(`${config.get("user.name")} ${config.get("user.surname")}`);
 });
-
-// require('./startup/loggin')();
-// require('./startup/routes')(app);
-// require('./startup/db')();
-// config.configuration();
-// require('./startup/validation')();

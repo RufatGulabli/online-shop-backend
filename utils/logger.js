@@ -50,11 +50,8 @@ const infoLogger = createLogger({
   ]
 });
 
-const uncaughtExc = () => {};
-
 module.exports = {
   errorLogger,
   infoLogger,
-  consoleLogger,
-  uncaughtExc
+  consoleLogger
 };
