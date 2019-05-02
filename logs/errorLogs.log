@@ -1,7 +1,45 @@
+2019-05-02T13:36:30.855Z => error => invalid token
+2019-05-02T13:37:01.265Z => error => invalid token
+2019-05-02T13:37:41.394Z => error => Unexpected token & in JSON at position 41
+2019-05-02T13:44:19.648Z => error => uncaughtException: Unexpected token )
+C:\Users\User\Desktop\Node Projects\online-shop-backend\utils\verify-token.js:13
+});
+ ^
 
-2019-04-30T12:49:30.502Z => error => Maximum call stack size exceeded
-2019-04-30T12:50:39.811Z => error => Maximum call stack size exceeded
-2019-04-30T12:50:51.453Z => error => Maximum call stack size exceeded
-2019-04-30T13:15:05.076Z => error => Maximum call stack size exceeded
-2019-04-30T13:15:36.124Z => error => Maximum call stack size exceeded
-2019-04-30T13:15:43.496Z => error => Maximum call stack size exceeded
+SyntaxError: Unexpected token )
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:8:33)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-02T13:44:25.115Z => error => result is not defined
+2019-05-02T13:47:54.173Z => error => uncaughtException: Converting circular structure to JSON
+TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\response.js:260:14)
+    at router.get (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:57:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\route.js:137:13)
+    at jwt.verify (C:\Users\User\Desktop\Node Projects\online-shop-backend\utils\verify-token.js:17:5)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at module.exports (C:\Users\User\Desktop\Node Projects\online-shop-backend\utils\verify-token.js:12:7)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\express\lib\router\index.js:281:22
+2019-05-02T13:59:04.640Z => error => Invalid status code: 10

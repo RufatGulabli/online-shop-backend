@@ -9,7 +9,8 @@ const cors = require("cors");
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+// app.use(cors());
+
 app.use("/login", loginRoutes);
 
 // 404 - Not Found Http Handler
@@ -25,7 +26,7 @@ app.use(function(req, res, next) {
 // Express Error Handler
 app.use((err, req, res, next) => {
   errorLogger.log({ level: "error", message: err.message });
-  res.status(500).json({ message: "Internal server error" });
+  res.status(500).json({ status: 500, message: "Internal Server Error" });
 });
 
 process.on("unhandledRejection", exc => {
@@ -33,11 +34,11 @@ process.on("unhandledRejection", exc => {
 });
 
 process.on("uncaughtException", exc => {
-  errorLogger.log({ level: "error", message: err.message });
+  errorLogger.log({ level: "error", message: exc.message });
   console.log("Exit");
   setTimeout(() => {
     process.exit(1);
-  }, 2000);
+  }, 1000);
 });
 
 app.listen(config.get("port"), () => {

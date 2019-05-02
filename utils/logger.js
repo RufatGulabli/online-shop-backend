@@ -25,10 +25,9 @@ const errorLogger = createLogger({
     new transports.File({
       maxsize: 5120000,
       maxFiles: 5,
-      colorise: true,
       filename: `${__dirname}/../logs/errorLogs.log`,
       timestamp: true,
-      handleExceptions: false
+      handleExceptions: true
     })
   ]
 });

@@ -1,3 +1,11 @@
 {
-  "port": 3000
+  "DB": {
+    "client": "pg",
+    "host": "127.0.0.1",
+    "user": "postgres",
+    "password": "May281987",
+    "database": "online-shop"
+  },
+  "port": 3000,
+  "secret-token": "MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAK8zH25/Fp4meKXSGc6WYOL4FXe1U64Q2xsXq36X/QZHAgMBAAE="
 }
