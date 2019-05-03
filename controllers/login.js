@@ -5,10 +5,11 @@ const Joi = require("joi");
 const bcrypt = require("bcrypt-nodejs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
-const verify_token_middleware = require("../utils/verify-token");
+const verify_token_middleware = require("../middlewares/verify-token");
 
 router.post("/", async (req, res, next) => {
   try {
+    console.log(req.body);
     let { email, password } = req.body;
     const { error } = validate(req.body);
 
@@ -54,7 +55,7 @@ router.post("/", async (req, res, next) => {
 });
 
 router.get("/", verify_token_middleware, async (req, res, next) => {
-  res.json("Succes");
+  res.json("Success");
 });
 
 function validate(body) {
