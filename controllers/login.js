@@ -6,10 +6,14 @@ const bcrypt = require("bcrypt-nodejs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const verify_token_middleware = require("../middlewares/verify-token");
+const { infoLogger } = require("../utils/logger");
 
 router.post("/", async (req, res, next) => {
   try {
-    console.log(req.body);
+    infoLogger.log({
+      level: "info",
+      message: JSON.stringify(req.body)
+    });
     let { email, password } = req.body;
     const { error } = validate(req.body);
 
@@ -23,9 +27,7 @@ router.post("/", async (req, res, next) => {
       .select("*");
 
     if (user.length === 0)
-      return res
-        .status(400)
-        .json({ error: 1, message: "Invalid email or password!" });
+      return res.status(400).json({ error: 1, message: "User does not exist" });
 
     await bcrypt.compare(password, user[0].password, (err, result) => {
       if (err) next(err);
@@ -52,10 +54,6 @@ router.post("/", async (req, res, next) => {
   } catch (err) {
     next(err);
   }
-});
-
-router.get("/", verify_token_middleware, async (req, res, next) => {
-  res.json("Success");
 });
 
 function validate(body) {
