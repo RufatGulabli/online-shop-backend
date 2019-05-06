@@ -5,7 +5,6 @@ const Joi = require("joi");
 const bcrypt = require("bcrypt-nodejs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
-const verify_token_middleware = require("../middlewares/verify-token");
 const { infoLogger } = require("../utils/logger");
 
 router.post("/", async (req, res, next) => {
@@ -33,7 +32,6 @@ router.post("/", async (req, res, next) => {
       if (err) next(err);
       else {
         if (result) {
-          console.log(user[0]);
           const token = jwt.sign(
             {
               id: user[0].id,
