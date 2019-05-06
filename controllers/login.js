@@ -33,11 +33,13 @@ router.post("/", async (req, res, next) => {
       if (err) next(err);
       else {
         if (result) {
+          console.log(user[0]);
           const token = jwt.sign(
             {
               id: user[0].id,
               email: user[0].email,
-              fullname: user[0].fullname
+              fullname: user[0].fullname,
+              isAdmin: user[0].isadmin
             },
             config.get("secret-token"),
             { expiresIn: "1 hour" }

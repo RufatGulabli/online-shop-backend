@@ -1,0 +1,450 @@
+2019-05-06T11:18:45.103Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  id;
+    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:18:49.701Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  id;
+    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:18:57.518Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  id;
+    ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:19:57.573Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:20:09.073Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:20:20.532Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:20:24.732Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:20:55.039Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:21:07.225Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:10:1)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:23:27.577Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:24:21.912Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:24:56.158Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:25:13.859Z => error => uncaughtException: Unexpected token export
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:1
+(function (exports, require, module, __filename, __dirname) { export class User {
+                                                              ^^^^^^
+
+SyntaxError: Unexpected token export
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:25:29.337Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:18)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:25:37.633Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:14)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:27:26.550Z => error => uncaughtException: Unexpected token ;
+C:\Users\User\Desktop\Node Projects\online-shop-backend\models\user.js:2
+  _id;
+     ^
+
+SyntaxError: Unexpected token ;
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:9:12)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+2019-05-06T11:31:01.660Z => error => uncaughtException: user is not defined
+ReferenceError: user is not defined
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:36:33)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:31:34.383Z => error => uncaughtException: user is not defined
+ReferenceError: user is not defined
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:36:33)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:32:22.252Z => error => uncaughtException: user is not defined
+ReferenceError: user is not defined
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:36:33)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:33:11.698Z => error => uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:37:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:34:20.349Z => error => uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:38:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:35:59.992Z => error => uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:36:42.721Z => error => uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:37:09.856Z => error => uncaughtException: invalid expiresIn option for string payload
+Error: invalid expiresIn option for string payload
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:128:22)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:38:46.023Z => error => uncaughtException: invalid expiresIn option for string payload
+Error: invalid expiresIn option for string payload
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:128:22)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:39:03.768Z => error => uncaughtException: invalid expiresIn option for string payload
+Error: invalid expiresIn option for string payload
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:128:22)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:39:20.591Z => error => uncaughtException: invalid expiresIn option for string payload
+Error: invalid expiresIn option for string payload
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:128:22)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:40:14.618Z => error => uncaughtException: Expected "payload" to be a plain object.
+Error: Expected "payload" to be a plain object.
+    at validate (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:40:11)
+    at validatePayload (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:62:10)
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:114:7)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+2019-05-06T11:41:26.578Z => error => uncaughtException: invalid expiresIn option for string payload
+Error: invalid expiresIn option for string payload
+    at Object.module.exports [as sign] (C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\jsonwebtoken\sign.js:128:22)
+    at bcrypt.compare (C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\login.js:43:29)
+    at C:\Users\User\Desktop\Node Projects\online-shop-backend\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
