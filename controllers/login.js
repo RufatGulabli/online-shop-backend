@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const { db_connection } = require("../db/db_connection");
-const Joi = require("joi");
 const bcrypt = require("bcrypt-nodejs");
 const jwt = require("jsonwebtoken");
 const config = require("config");
-const verify_token_middleware = require("../middlewares/verify-token");
 const { infoLogger } = require("../utils/logger");
+const { validateLogin } = require("../utils/bodyValidators");
 
 router.post("/", async (req, res, next) => {
   try {
@@ -15,7 +14,7 @@ router.post("/", async (req, res, next) => {
       message: JSON.stringify(req.body)
     });
     let { email, password } = req.body;
-    const { error } = validate(req.body);
+    const { error } = validateLogin(req.body);
 
     if (error)
       return res.status(400).json({ error: 1, body: error.details[0].message });
@@ -27,7 +26,7 @@ router.post("/", async (req, res, next) => {
       .select("*");
 
     if (user.length === 0)
-      return res.status(400).json({ error: 1, message: "User does not exist" });
+      return res.status(400).json({ error: 1, body: "User does not exist" });
 
     await bcrypt.compare(password, user[0].password, (err, result) => {
       if (err) next(err);
@@ -49,7 +48,7 @@ router.post("/", async (req, res, next) => {
         } else {
           res
             .status(400)
-            .json({ error: 1, message: "Invalid email or password!" });
+            .json({ error: 1, body: "Invalid email or password!" });
         }
       }
     });
@@ -57,20 +56,5 @@ router.post("/", async (req, res, next) => {
     next(err);
   }
 });
-
-function validate(body) {
-  const schema = {
-    email: Joi.string()
-      .email()
-      .min(10)
-      .max(156)
-      .required(),
-    password: Joi.string()
-      .min(8)
-      .max(64)
-      .required()
-  };
-  return Joi.validate(body, schema);
-}
 
 module.exports = router;

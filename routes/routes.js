@@ -1,7 +1,8 @@
-const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const loginRoute = require("../controllers/login");
+const loginController = require("../controllers/login");
+const categoryController = require("../controllers/category");
+const productController = require("../controllers/products");
 const {
   expressErrorHandler,
   pageNotFoundErrorHandler
@@ -12,7 +13,9 @@ module.exports = function(app) {
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(cors());
   app.options("*", cors());
-  app.use("/login", loginRoute);
+  app.use("/login", loginController);
+  app.use("/category", categoryController);
+  app.use("/product", productController);
   app.use(expressErrorHandler);
   app.use(pageNotFoundErrorHandler);
 };
