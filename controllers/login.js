@@ -32,7 +32,6 @@ router.post("/", async (req, res, next) => {
       if (err) next(err);
       else {
         if (result) {
-          console.log(user[0]);
           const token = jwt.sign(
             {
               id: user[0].id,
