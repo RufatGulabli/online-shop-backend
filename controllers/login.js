@@ -11,7 +11,7 @@ router.post("/", async (req, res, next) => {
   try {
     infoLogger.log({
       level: "info",
-      message: JSON.stringify(req.body)
+      message: JSON.stringify(req.body.email + "::" + req.hostname)
     });
     let { email, password } = req.body;
     const { error } = validateLogin(req.body);
@@ -40,7 +40,7 @@ router.post("/", async (req, res, next) => {
               isAdmin: user[0].isadmin
             },
             config.get("secret-token"),
-            { expiresIn: "1 hour" }
+            { expiresIn: "7d" }
           );
           res.setHeader("authorization", "Bearer " + token);
           res.status(200).json(token);

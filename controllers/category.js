@@ -4,7 +4,9 @@ const { db_connection } = require("../db/db_connection");
 
 router.get("/", async (req, res, next) => {
   try {
-    const categories = await db_connection("categories").select();
+    const categories = await db_connection("categories")
+      .select()
+      .orderBy("description");
     res.status(200).json(categories);
   } catch (err) {
     next(err);

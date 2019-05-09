@@ -1,0 +1,30 @@
+2019-05-08T19:43:12.552Z => info => {"title":"New Products","price":2.99,"category":{"id":3,"description":"TV"},"imageUrl":"https://www.google.com"}
+2019-05-08T19:45:27.210Z => info => {}
+2019-05-08T19:46:26.613Z => info => {"title":"New Product","price":2.99,"category":3,"imageurl":"https://www.google.com/dsadasdasdasd23ds3423"}
+2019-05-08T19:46:35.735Z => info => {"title":"New Product","price":2.99,"category":3,"imageUrl":"https://www.google.com/dsadasdasdasd23ds3423"}
+2019-05-08T19:46:45.861Z => info => {"title":"New Product","price":2.99,"category":"3","imageUrl":"https://www.google.com/dsadasdasdasd23ds3423"}
+2019-05-08T19:47:11.849Z => info => {"title":"New Product","price":2.99,"category":"31","imageUrl":"https://www.google.com/dsadasdasdasd23ds3423"}
+2019-05-08T19:48:38.087Z => info => {"title":"gulabli.rufat@gmail.com","price":5.66,"category":{"id":1,"description":"Mobile"},"imageUrl":"sadasdasdasdasd"}
+2019-05-08T19:50:35.845Z => info => {"title":"","price":"","category":"","imageUrl":""}
+2019-05-08T19:51:56.430Z => info => {"title":"gulabli.rufat@gmail.com","price":null,"category":{"id":4,"description":"Electronics"},"imageUrl":"https://www.google.com"}
+2019-05-08T19:53:35.455Z => info => {"title":"Title","price":null,"category":{"id":5,"description":"Clothes"},"imageUrl":"https://www.google.com"}
+2019-05-08T19:53:41.070Z => info => {"title":"Title","price":null,"category":{"id":5,"description":"Clothes"},"imageUrl":"https://www.google.com"}
+2019-05-08T19:54:25.067Z => info => {"title":"gulabli.rufat@gmail.com","price":null,"imageUrl":"https://www.google.com"}
+2019-05-08T19:55:14.657Z => info => {"title":"gulabli.rufat@gmail.com","price":null,"category":{"id":5,"description":"Clothes"},"imageUrl":"https://www.google.com"}
+2019-05-08T19:56:36.633Z => info => {"title":"gulabli.rufat@gmail.com","price":2.36,"category":{"id":5,"description":"Clothes"},"imageUrl":"https://www.google.com"}
+2019-05-08T20:03:11.388Z => info => {"_title":"gulabli.rufat@gmail.com","_price":2.99,"_category":4}
+2019-05-08T20:03:53.772Z => info => {"_title":"My Product","_price":2.99,"_category":5,"_imageUrl":"https://www.google.com"}
+2019-05-08T20:08:24.861Z => info => {"email":"gulabli.rufat@gmail.com","password":"May281987"}
+2019-05-08T20:12:55.610Z => info => "gulabli.rufat@gmail.com::localhost"
+2019-05-09T10:50:53.305Z => info => "gulabli.rufat@gmail.com::localhost"
+2019-05-09T10:51:16.528Z => info => "samir_mammadli@hotmail.com::localhost"
+2019-05-09T10:52:22.495Z => info => "gulabli.rufat@gmail.com::localhost"
+2019-05-09T11:25:08.272Z => info => "gulabli.rufat@gmail.com::localhost"
+2019-05-09T11:26:00.706Z => info => "gulabli.rufat@gmail.com::localhost"
+2019-05-09T12:42:28.518Z => info => {"title":"gulabli.rufat@gmail.com","price":0.3,"category":5,"imageUrl":"https://www.google.com"}
+2019-05-09T13:09:14.248Z => info => {"title":"gulabli.rufat@gmail.com","price":0.35,"category":4,"imageUrl":"https://www.google.com"}
+2019-05-09T14:00:30.309Z => info => {"title":"Samsung S10 Plus","price":1299,"category":1,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
+2019-05-09T14:05:14.598Z => info => {"title":"Samsung S10 Plus","price":555,"category":5,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
+2019-05-09T14:07:39.766Z => info => {"title":"Samsung S10 Plus","price":0.36,"category":1,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
+2019-05-09T14:11:14.159Z => info => {"title":"Samsung S10 Plus","price":66.36,"category":2,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
+2019-05-09T14:36:55.071Z => info => {"title":"Samsung S10 Plus","price":999.01,"category":1,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
