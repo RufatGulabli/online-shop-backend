@@ -1,1 +1,0 @@
-2019-05-08T19:47:11.858Z => error => insert into "products" ("category", "imageurl", "price", "title") values ($1, $2, $3, $4) - insert or update on table "products" violates foreign key constraint "products_category_fkey"

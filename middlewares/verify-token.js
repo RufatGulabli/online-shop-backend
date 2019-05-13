@@ -15,6 +15,7 @@ module.exports = (req, res, next) => {
         .json({ error: 1, message: "Unauthorized request" });
     }
     jwt.verify(token, config.get("secret-token"));
+
     next();
   } catch (err) {
     return res.status(401).json({ error: 1, message: "Invalid token" });
