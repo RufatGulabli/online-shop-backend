@@ -28,3 +28,7 @@
 2019-05-09T14:07:39.766Z => info => {"title":"Samsung S10 Plus","price":0.36,"category":1,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
 2019-05-09T14:11:14.159Z => info => {"title":"Samsung S10 Plus","price":66.36,"category":2,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
 2019-05-09T14:36:55.071Z => info => {"title":"Samsung S10 Plus","price":999.01,"category":1,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/2/2b/Samsung_Galaxy_S.jpg"}
+2019-05-10T08:00:25.799Z => info => "gulabli.rufat@gmail.com::localhost"
+2019-05-10T08:03:26.429Z => info => {"title":"Samsung Galaxy S10 SE PLUS","price":1259,"category":6,"imageUrl":"https://upload.wikimedia.org/wikipedia/commons/5/58/Galaxy_S10.jpg"}
+2019-05-10T10:36:53.465Z => info => {"title":"","price":"","imageUrl":""}
+2019-05-10T10:36:56.887Z => info => {"title":"","price":"","imageUrl":""}
