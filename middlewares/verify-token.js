@@ -1,8 +1,10 @@
 const jwt = require("jsonwebtoken");
 const config = require("config");
+const { infoLogger } = require("../utils/logger");
 
 module.exports = (req, res, next) => {
   try {
+    console.log(req.headers.authorization);
     if (!req.headers.authorization) {
       return res
         .status(401)
