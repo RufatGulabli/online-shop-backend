@@ -29,8 +29,7 @@ router.post("/", [verifyToken, verifyAdmin], async (req, res, next) => {
   }
 });
 
-router.get("/", code .
-async (req, res, next) => {
+router.get("/", [verifyToken, verifyAdmin], async (req, res, next) => {
   try {
     infoLogger.log({
       level: "info",
