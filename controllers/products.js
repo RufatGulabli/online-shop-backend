@@ -35,10 +35,25 @@ router.get("/", [verifyToken, verifyAdmin], async (req, res, next) => {
       level: "info",
       message: JSON.stringify("GET: /products::".concat(req.hostname))
     });
-    const products = await db_connection("products").select("*");
-    res.status(200).json({ error: 0, body: products });
+    const products = await db_connection("products")
+      .select("*")
+      .orderBy("id", "asc");
+    res.status(200).json(products);
   } catch (err) {
     next(err);
+  }
+});
+
+router.get("/:id", async (req, res, next) => {
+  try {
+    const products = await db_connection("products")
+      .select("*")
+      .where({
+        id: req.params["id"]
+      });
+    res.status(200).json(products);
+  } catch (ex) {
+    next(ex);
   }
 });
 
