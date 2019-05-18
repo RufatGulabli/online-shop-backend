@@ -1,44 +1,5 @@
-2019-05-15T19:49:38.045Z => error => uncaughtException: Unexpected token }
-C:\Users\Rufet\Desktop\Angular Projects\online-shop-backend\middlewares\verify-token.js:13
-    infoLogger.log({level: })
-                           ^
-
-SyntaxError: Unexpected token }
-    at new Script (vm.js:79:7)
-    at createScript (vm.js:251:10)
-    at Object.runInThisContext (vm.js:303:10)
-    at Module._compile (internal/modules/cjs/loader.js:657:28)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
-    at Module.load (internal/modules/cjs/loader.js:599:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
-    at Module.require (internal/modules/cjs/loader.js:637:17)
-    at require (internal/modules/cjs/helpers.js:22:18)
-    at Object.<anonymous> (C:\Users\Rufet\Desktop\Angular Projects\online-shop-backend\controllers\products.js:6:21)
-    at Module._compile (internal/modules/cjs/loader.js:689:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
-    at Module.load (internal/modules/cjs/loader.js:599:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
-2019-05-16T09:28:12.514Z => error => uncaughtException: Unexpected token ;
-C:\Users\User\Desktop\Node Projects\online-shop-backend\controllers\products.js:47
-    id: req.param["id"];
-                       ^
-
-SyntaxError: Unexpected token ;
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:617:28)
-    at Object.Module._extensions..js (module.js:664:10)
-    at Module.load (module.js:566:32)
-    at tryModuleLoad (module.js:506:12)
-    at Function.Module._load (module.js:498:3)
-    at Module.require (module.js:597:17)
-    at require (internal/module.js:11:18)
-    at Object.<anonymous> (C:\Users\User\Desktop\Node Projects\online-shop-backend\routes\routes.js:5:27)
-    at Module._compile (module.js:653:30)
-    at Object.Module._extensions..js (module.js:664:10)
-    at Module.load (module.js:566:32)
-    at tryModuleLoad (module.js:506:12)
-    at Function.Module._load (module.js:498:3)
-    at Module.require (module.js:597:17)
+2019-05-18T16:09:22.610Z => error => Error: Invalid Parameter
+2019-05-18T16:10:28.218Z => error => Error: /product/:id Invalid Parameter:sadasdasdasd
+2019-05-18T16:10:43.753Z => error => Error: Invalid Parameter:sadasdasdasd
+2019-05-18T16:10:55.473Z => error => Error: Invalid URL Parameter: sadasdasdasd
+2019-05-18T16:11:29.399Z => error => Error: Invalid URL Parameter: sadasdasdasd

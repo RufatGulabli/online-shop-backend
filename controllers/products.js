@@ -33,12 +33,29 @@ router.get("/", [verifyToken, verifyAdmin], async (req, res, next) => {
   try {
     infoLogger.log({
       level: "info",
-      message: JSON.stringify("GET: /products::".concat(req.hostname))
+      message: JSON.stringify(req.originalUrl)
     });
+    const sortColumn = req.query["sortColumn"] || "id";
+    const orderBy = req.query["sortOrder"] || "asc";
+    const limit = parseInt(req.query["pageSize"]) || 10;
+    const offset = parseInt(req.query["pageNumber"]) || 1;
     const products = await db_connection("products")
       .select("*")
-      .orderBy("id", "asc");
+      .orderBy(sortColumn, orderBy)
+      .limit(limit)
+      .offset((offset - 1) * limit);
     res.status(200).json(products);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get("/count", [verifyToken, verifyAdmin], async (req, res, next) => {
+  try {
+    let total = await db_connection("products")
+      .count("id")
+      .first();
+    res.status(200).json(total["count"]);
   } catch (err) {
     next(err);
   }
@@ -46,10 +63,15 @@ router.get("/", [verifyToken, verifyAdmin], async (req, res, next) => {
 
 router.get("/:id", async (req, res, next) => {
   try {
+    let param = req.params["id"];
+    const _id = parseInt(param);
+    if (isNaN(_id)) {
+      throw new Error(`Invalid URL Parameter: ${param}`);
+    }
     const products = await db_connection("products")
       .select("*")
       .where({
-        id: req.params["id"]
+        id: _id
       });
     res.status(200).json(products);
   } catch (ex) {
