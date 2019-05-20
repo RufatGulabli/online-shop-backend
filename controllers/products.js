@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { db_connection } = require("../db/db_connection");
-const { infoLogger } = require("../utils/logger");
+const { infoLogger, errorLogger } = require("../utils/logger");
 const { validateProduct } = require("../utils/bodyValidators");
 const verifyToken = require("../middlewares/verify-token");
 const verifyAdmin = require("../middlewares/verify-admin");
@@ -46,7 +46,6 @@ router.get("/", [verifyToken, verifyAdmin], async (req, res, next) => {
       .orderBy(sortColumn, orderBy)
       .limit(limit)
       .offset((offset - 1) * limit);
-    console.log(products);
     res.status(200).json(products);
   } catch (err) {
     next(err);
@@ -64,19 +63,25 @@ router.get("/count", [verifyToken, verifyAdmin], async (req, res, next) => {
   }
 });
 
-router.get("/:id", async (req, res, next) => {
+router.get("/:id", [verifyToken], async (req, res, next) => {
   try {
-    let param = req.params["id"];
-    const _id = parseInt(param);
-    if (isNaN(_id)) {
-      res.status(400).json({ error: 1, body: "ID must be a number" });
+    infoLogger.log({ level: "info", message: JSON.stringify(req.originalUrl) });
+    const productId = parseInt(req.params["id"]);
+    if (isNaN(productId) || productId <= 0) {
+      errorLogger.log({
+        level: "error",
+        message: JSON.stringify(req.originalUrl + "::").concat(
+          JSON.stringify(req.params)
+        )
+      });
+      return res.status(400).json({ error: 1, body: "ID must be a number" });
     }
     const products = await db_connection("products")
       .select("*")
       .where({
-        id: _id
+        id: productId
       });
-    res.status(200).json(products);
+    res.status(200).json(products[0]);
   } catch (ex) {
     next(ex);
   }
@@ -85,14 +90,14 @@ router.get("/:id", async (req, res, next) => {
 router.delete("/:id", [verifyToken, verifyAdmin], async (req, res, next) => {
   try {
     let productId = parseInt(req.params["id"]);
-    if (isNaN(productId)) {
-      res.status(400).json({ error: 1, body: "ID must be a number" });
+    if (isNaN(productId) || productId < 0) {
+      return res.status(400).json({ error: 1, body: "ID must be a number" });
     }
     let rowsAffected = await db_connection("products")
       .where("id", productId)
       .delete();
     if (!rowsAffected) {
-      res.status(400).json("There is not a product qith a given ID");
+      return res.status(400).json("There is not a product with a given ID");
     }
     res.status(200).json(rowsAffected);
   } catch (err) {
