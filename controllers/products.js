@@ -12,16 +12,15 @@ router.post("/", [verifyToken, verifyAdmin], async (req, res, next) => {
       level: "info",
       message: JSON.stringify(req.body)
     });
-    const { error } = validateProduct(req.body);
-    const { title, price, category, imageUrl } = req.body;
+    const { id, ...product } = req.body;
+    const { error } = validateProduct(product);
     if (error)
       return res.status(400).json({ error: 1, body: error.details[0].message });
-
     const result = await db_connection("products").insert({
-      title: title,
-      price: price,
-      category: category,
-      imageurl: imageUrl
+      title: product.title,
+      price: product.price,
+      category: product.category,
+      imageurl: product.imageUrl
     });
     res.status(200).json(result.rowCount);
   } catch (err) {
@@ -76,14 +75,47 @@ router.get("/:id", [verifyToken], async (req, res, next) => {
       });
       return res.status(400).json({ error: 1, body: "ID must be a number" });
     }
-    const products = await db_connection("products")
+    const product = await db_connection("products")
       .select("*")
       .where({
         id: productId
       });
-    res.status(200).json(products[0]);
+    res.status(200).json(product);
   } catch (ex) {
     next(ex);
+  }
+});
+
+router.put("/", [verifyToken, verifyAdmin], async (req, res, next) => {
+  try {
+    infoLogger.log({
+      level: "info",
+      message:
+        JSON.stringify("PUT::" + req.originalUrl) +
+        "::" +
+        JSON.stringify(req.body)
+    });
+    const { error } = validateProduct(req.body);
+    const { id, title, price, category, imageUrl } = req.body;
+    if (!id) return res.status(400).json({ error: 1, body: "ID is required" });
+    if (error)
+      return res.status(400).json({ error: 1, body: error.details[0].message });
+    const product = await db_connection("products")
+      .select("*")
+      .where({
+        id: id
+      });
+    let affectedRow = await db_connection("products")
+      .where("id", id)
+      .update({
+        title: title,
+        price: price,
+        category: category,
+        imageurl: imageUrl
+      });
+    res.status(200).json(affectedRow);
+  } catch (err) {
+    next(err);
   }
 });
 

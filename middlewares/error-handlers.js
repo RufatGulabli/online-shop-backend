@@ -11,10 +11,9 @@ const expressErrorHandler = function(err, req, res, next) {
 // 404 - Not Found Http Handler
 const pageNotFoundErrorHandler = function(req, res, next) {
   let err = new Error("Not Found");
-  err.status = 404;
-  res.json({
-    status: err.status,
-    body: err
+  res.status(404).json({
+    error: 1,
+    body: err.message
   });
 };
 

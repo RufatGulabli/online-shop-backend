@@ -18,6 +18,7 @@ function validateLogin(body) {
 
 function validateProduct(body) {
   const schema = JOI.object({
+    id: JOI.number().min(1),
     title: JOI.string()
       .required()
       .max(64)

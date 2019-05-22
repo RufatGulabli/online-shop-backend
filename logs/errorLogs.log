@@ -1,0 +1,6 @@
+2019-05-21T05:47:48.740Z => error => ReferenceError: originalUrl is not defined
+2019-05-21T05:57:55.421Z => error => ReferenceError: productId is not defined
+2019-05-21T05:59:05.802Z => error => Error: Undefined binding(s) detected when compiling SELECT query: select * from "products" where "id" = ?
+2019-05-21T05:59:24.633Z => error => Error: Undefined binding(s) detected when compiling SELECT query: select * from "products" where "id" = ?
+2019-05-21T06:17:50.323Z => error => error: update "products" set "title" = $1, "price" = $2, "category" = $3, "imageUrl" = $4 where "id" = $5 - column "imageUrl" of relation "products" does not exist
+2019-05-21T06:29:25.396Z => error => TypeError: JOI.min is not a function
