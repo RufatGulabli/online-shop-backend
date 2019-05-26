@@ -28,7 +28,7 @@ router.post("/", [verifyToken, verifyAdmin], async (req, res, next) => {
   }
 });
 
-router.get("/", [verifyToken], async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   try {
     infoLogger.log({
       level: "info",
@@ -132,6 +132,26 @@ router.delete("/:id", [verifyToken, verifyAdmin], async (req, res, next) => {
       return res.status(400).json("There is not a product with a given ID");
     }
     res.status(200).json(rowsAffected);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get("/category/:id", async (req, res, next) => {
+  try {
+    let categoryId = +req.params["id"];
+    if (isNaN(categoryId)) {
+      errorLogger.log({ level: "error", message: req.params["id"] });
+      return res.status(400).json("Category must be a number");
+    }
+    const products = await db_connection("products")
+      .select("*")
+      .where("category", categoryId);
+    if (!products.length)
+      return res
+        .status(404)
+        .json(`There is not any category with given id : ${categoryId}`);
+    res.status(200).json(products);
   } catch (err) {
     next(err);
   }
