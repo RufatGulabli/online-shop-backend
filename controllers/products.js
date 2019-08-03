@@ -51,7 +51,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-router.get("/count", [verifyToken, verifyAdmin], async (req, res, next) => {
+router.get("/count", async (req, res, next) => {
   try {
     let total = await db_connection("products")
       .count("id")
@@ -62,7 +62,36 @@ router.get("/count", [verifyToken, verifyAdmin], async (req, res, next) => {
   }
 });
 
-router.get("/:id", [verifyToken], async (req, res, next) => {
+router.get("/getCountByCategory/:id", async (req, res, next) => {
+  try {
+    let categoryId = req.params.id;
+    if (isNaN(categoryId)) {
+      return res.status(404).json({ error: 1, body: "Category Id must be a number." });
+    }
+    let totalCount = await db_connection("products")
+      .count("id")
+      .where("category", categoryId)
+      .first();
+    res.status(200).json(totalCount.count);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get("/getCount/ByFilter/:filter", async (req, res, next) => {
+  try {
+    const keyword = req.params.filter;
+    let totalCount = await db_connection("products")
+      .count("id")
+      .where("title", "ilike", "%".concat(keyword).concat("%"))
+      .first();
+    res.status(200).json(totalCount.count);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get("/:id", async (req, res, next) => {
   try {
     infoLogger.log({ level: "info", message: JSON.stringify(req.originalUrl) });
     const productId = parseInt(req.params["id"]);
@@ -80,7 +109,7 @@ router.get("/:id", [verifyToken], async (req, res, next) => {
       .where({
         id: productId
       });
-    res.status(200).json(product);
+    res.status(200).json(product[0]);
   } catch (ex) {
     next(ex);
   }
@@ -140,18 +169,27 @@ router.delete("/:id", [verifyToken, verifyAdmin], async (req, res, next) => {
 router.get("/category/:id", async (req, res, next) => {
   try {
     let categoryId = +req.params["id"];
+    const limit = parseInt(req.query["pageSize"]) || 5;
+    const offset = parseInt(req.query["pageNumber"]) || 1;
+
     if (isNaN(categoryId)) {
       errorLogger.log({ level: "error", message: req.params["id"] });
       return res.status(400).json("Category must be a number");
     }
     const products = await db_connection("products")
       .select("*")
-      .where("category", categoryId);
+      .where("category", categoryId)
+      .orderBy("title", "ASC")
+      .limit(limit)
+      .offset((offset - 1) * limit);
+
     if (!products.length)
       return res
         .status(404)
         .json(`There is not any category with given id : ${categoryId}`);
+
     res.status(200).json(products);
+
   } catch (err) {
     next(err);
   }

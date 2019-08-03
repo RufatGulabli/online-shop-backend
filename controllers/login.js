@@ -40,7 +40,7 @@ router.post("/", async (req, res, next) => {
               isAdmin: user[0].isadmin
             },
             config.get("secret-token"),
-            { expiresIn: "7d" }
+            { expiresIn: "1d" }
           );
           res.setHeader("authorization", "Bearer " + token);
           res.status(200).json(token);
