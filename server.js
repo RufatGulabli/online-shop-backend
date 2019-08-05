@@ -4,6 +4,7 @@ const config = require("config");
 
 const app = express();
 require("./routes/routes")(app);
+const PORT = process.env.PORT || 6789;
 
 process.on("unhandledRejection", exc => {
   throw exc;
@@ -17,10 +18,10 @@ process.on("uncaughtException", exc => {
   }, 1000);
 });
 
-app.listen(config.get("port"), () => {
+app.listen(PORT, () => {
   consoleLogger.log({
     level: "info",
-    message: `Server is running on port ${config.get("port")}`
+    message: `Server is running on port ${PORT}`
   });
   // below code is for demonstration of default.json and production.json configarution
   // console.log(`${config.get("user.name")} ${config.get("user.surname")}`);
